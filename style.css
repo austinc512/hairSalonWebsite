@@ -1,0 +1,500 @@
+/* GLOBAL STYLES */
+
+body {
+  background-color: #f0f0f5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p,
+h1,
+h4 {
+  text-align: center;
+}
+
+img {
+  height: 150px;
+  margin: 0 auto;
+  display: block;
+}
+
+/* HEADER SECTION */
+header {
+  background-color: #76b5c5;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-right: 20%;
+}
+
+nav > button {
+  background-color: #063970;
+  color: white;
+  border-style: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: large;
+  padding: 8px;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-logo {
+  margin: 0 auto;
+  height: 150px;
+  display: inline;
+}
+
+.photo1 {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.mod1-image,
+.mod2-image,
+.mod3-image,
+.mod4-image {
+  width: 80%;
+  height: auto;
+}
+
+.featured-img {
+  float: left;
+  margin-right: 5px;
+}
+
+.featured {
+  border: 1px solid #006aff;
+  border-radius: 10px;
+  background-color: #d5fffd;
+}
+
+.signature {
+  text-align: right;
+  margin-right: 10%;
+}
+
+.losing-hair {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.bald-image {
+  float: left;
+  margin-right: 5px;
+  display: block;
+}
+
+/* FOOTER SECTION */
+footer {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  background-color: #76b5c5;
+  align-items: center;
+}
+
+footer div .connect {
+  background: #387a82;
+  float: right;
+  height: 18px;
+  margin: 0 20px 0 150px;
+  padding: 22px 20px;
+  overflow: hidden;
+  width: 144px;
+}
+
+footer div .connect a {
+  background: url(https://freewebsitetemplates.com/preview/hairstylesalon/images/icons.png)
+    no-repeat;
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 0 8px;
+  padding: 0;
+  text-indent: -99999px;
+  width: 20px;
+}
+
+#twitter {
+  background-image: url(https://freewebsitetemplates.com/preview/hairstylesalon/images/icons.png);
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 0 8px;
+  padding: 0;
+  text-indent: -99999px;
+  width: 20px;
+  background-position: 0 -32px;
+  height: 20px;
+  width: 20px;
+}
+
+#facebook {
+  background-image: url(https://freewebsitetemplates.com/preview/hairstylesalon/images/icons.png);
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 0 8px;
+  padding: 0;
+  text-indent: -99999px;
+  width: 20px;
+  background-position: 0 -57px;
+  height: 20px;
+  width: 20px;
+}
+
+#googleplus {
+  background-image: url(https://freewebsitetemplates.com/preview/hairstylesalon/images/icons.png);
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 0 8px;
+  padding: 0;
+  text-indent: -99999px;
+  width: 20px;
+  background-position: 0 -82px;
+  height: 20px;
+  width: 20px;
+}
+
+#pinterest {
+  background-image: url(https://freewebsitetemplates.com/preview/hairstylesalon/images/icons.png);
+  display: block;
+  float: left;
+  height: 20px;
+  margin: 0 8px;
+  padding: 0;
+  text-indent: -99999px;
+  width: 20px;
+  background-position: 0 -107px;
+  height: 20px;
+  width: 20px;
+}
+
+/* MISC STYLING */
+.about-us {
+  text-align: center;
+}
+
+/* Gallery Mobile view needs a grid */
+.gallery-img {
+  height: 150px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.galh1 {
+  grid-area: galh1;
+}
+
+.gal1 {
+  grid-area: gal1;
+}
+.gal2 {
+  grid-area: gal2;
+}
+.gal3 {
+  grid-area: gal3;
+}
+.gal4 {
+  grid-area: gal4;
+}
+.gal5 {
+  grid-area: gal5;
+}
+.gal6 {
+  grid-area: gal6;
+}
+.gal7 {
+  grid-area: gal7;
+}
+.gal8 {
+  grid-area: gal8;
+}
+.gal9 {
+  grid-area: gal9;
+}
+.gal10 {
+  grid-area: gal10;
+}
+.gal11 {
+  grid-area: gal11;
+}
+.gal12 {
+  grid-area: gal12;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 0.4fr);
+  grid-template-areas:
+    "galh1 galh1"
+    "gal1 gal2"
+    "gal3 gal4"
+    "gal5 gal6"
+    "gal7 gal8"
+    "gal9 gal10"
+    "gal11 gal12";
+  grid-gap: 50px;
+  margin-bottom: 50px;
+}
+
+/* news grid stuff  */
+.news-h2 {
+  grid-area: news-h2;
+}
+.news-block {
+  grid-area: news-block;
+}
+.recent-news {
+  grid-area: recent-news;
+}
+.news-blob1 {
+  grid-area: news-blob1;
+}
+.news-blob2 {
+  grid-area: news-blob2;
+}
+.news-blob3 {
+  grid-area: news-blob3;
+}
+
+.news {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.25fr 1fr 0.2fr 0.2fr 0.2fr 0.2fr;
+  grid-template-areas:
+    "news-h2"
+    "news-block"
+    "recent-news"
+    "news-blob1"
+    "news-blob2"
+    "news-blob3";
+  grid-gap: 10px;
+}
+
+/* overriding global style for p tags on this mobile view */
+.news > div > p {
+  text-align: left;
+}
+
+/* contact page styles */
+.contact-page {
+  text-align: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+
+/* TABLET   */
+@media (min-width: 576px) {
+  header {
+    display: flex;
+    height: 150px;
+    background-color: #76b5c5;
+  }
+
+  nav {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  nav > button {
+    background-color: #063970;
+    color: white;
+    border-style: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: large;
+    padding: 8px;
+  }
+
+  .logo-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 1%;
+  }
+
+  .nav-logo {
+    height: 100%;
+    display: inline;
+  }
+
+  .h1 {
+    grid-area: h1;
+    margin: auto auto;
+  }
+
+  /* index grid stuff  */
+  .photo1 {
+    grid-area: photo1;
+    margin-top: 10px;
+    width: 100%;
+  }
+  .mod1 {
+    grid-area: mod1;
+  }
+  .mod2 {
+    grid-area: mod2;
+  }
+  .mod3 {
+    grid-area: mod3;
+  }
+  .mod4 {
+    grid-area: mod4;
+  }
+
+  .featured {
+    grid-area: featured;
+  }
+  .hairstyle-bottom {
+    grid-area: hairstyle-bottom;
+  }
+  .losing-hair {
+    grid-area: losing-hair;
+  }
+
+  .mod1,
+  .mod2,
+  .mod3,
+  .mod4 {
+    margin-top: 5%;
+  }
+
+  .index {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr 0.4fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "photo1 h1"
+      "mod1 mod2"
+      "mod3 mod4"
+      "featured featured"
+      "hairstyle-bottom hairstyle-bottom"
+      "losing-hair losing-hair";
+    height: 1900px;
+  }
+
+  /* about page grid stuff */
+  .about-us {
+    grid-area: about-us;
+  }
+  .about-story {
+    grid-area: about-story;
+  }
+  .about-team {
+    grid-area: about-team;
+  }
+  .about-services {
+    grid-area: about-services;
+  }
+  .about-quality {
+    grid-area: about-quality;
+  }
+  .about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "about-us about-us"
+      "about-story about-story"
+      "about-team about-services"
+      "about-quality about-quality";
+    grid-gap: 10px;
+  }
+
+  /* gallery grid updates */
+  .gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 0.4fr);
+    grid-template-areas:
+      "galh1 galh1 galh1"
+      "gal1 gal2 gal3"
+      "gal4 gal5 gal6"
+      "gal7 gal8 gal9"
+      "gal10 gal11 gal12";
+    grid-gap: 50px;
+  }
+  /* news grid updates */
+  .news {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr 1fr;
+    grid-template-rows: 0.35fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "news-h2 . recent-news"
+      "news-block news-block news-blob1"
+      "news-block news-block news-blob2"
+      "news-block news-block news-blob3";
+  }
+  .news-h2,
+  .recent-news {
+    margin-left: 22px;
+  }
+  /*  Contact Page tablet */
+  .contact-page {
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+/* LAPTOP */
+@media (min-width: 992px) {
+  /* INDEX PAGE */
+  .index {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "photo1 photo1 h1 h1"
+      "mod1 mod2 mod3 mod4"
+      "featured featured hairstyle-bottom hairstyle-bottom"
+      ". losing-hair losing-hair .";
+    gap: 10px;
+    height: 1450px;
+  }
+  .losing-hair {
+    margin-top: 5px;
+  }
+  /* ABOUT PAGE */
+  .about {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.25fr 0.5fr 0.5fr;
+    grid-template-areas:
+      "about-us about-us about-us"
+      "about-story about-team about-quality"
+      "about-story about-services about-services";
+    height: 560px;
+    grid-gap: 10px;
+  }
+  /* gallery grid */
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 0.4fr);
+    grid-template-areas:
+      "galh1 galh1 galh1 galh1"
+      "gal1 gal2 gal3 gal4"
+      "gal5 gal6 gal7 gal8"
+      "gal9 gal10 gal11 gal12";
+    grid-gap: 50px;
+  }
+  /* I'm not applying laptop styles for the News and Contact pages since it seems like the tablet viewport already displays well. You might call it lazy, but I call it acceptable. */
+}
